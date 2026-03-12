@@ -15,3 +15,10 @@ Phase 1 - Exploring the Database
 -- Explore countries of products, divisions
 	Select DISTINCT category,subcategory,product_name FROM gold.dim_products
 	order by 1,2,3
+
+-- Find the date of first and last order
+	Select
+	MIN(order_date) as first_order,
+	MAX(order_date) as Last_order,
+	DATEDIFF(month,MIN(order_date),MAX(order_date)) as year_ranges
+	from [gold].[fact_sales]
