@@ -2,11 +2,11 @@
 This Project is from Baraa on SQL . I have followed the video and executed it to learn the basics of Analytics using SQL
 
 Phase 1 - Exploring the Database
--- To  check what tables are in the database
+-- To  check what tables are in the database/n
      Select * from INFORMATION_SCHEMA.TABLES
      
---To  check what tables are in the database
-      Select * from INFORMATION_SCHEMA.COLUMNS 
+--To  check what tables are in the database/n
+      Select * from INFORMATION_SCHEMA.COLUMNS/n
 	    Where TABLE_NAME = 'dim_customers'
       
 -- Explore countries of customers
